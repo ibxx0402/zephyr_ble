@@ -449,8 +449,7 @@ static struct bt_bap_stream_ops stream_ops = {
 };
 
 static int setup_broadcast_source(struct bt_bap_broadcast_source **source)
-{	preset_active.qos.rtn = 0;
-	struct bt_bap_broadcast_source_stream_param
+{	struct bt_bap_broadcast_source_stream_param
 		stream_params[CONFIG_BT_BAP_BROADCAST_SRC_STREAM_COUNT];
 	struct bt_bap_broadcast_source_subgroup_param
 		subgroup_param[CONFIG_BT_BAP_BROADCAST_SRC_SUBGROUP_COUNT];
